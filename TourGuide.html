@@ -939,7 +939,7 @@ app.controller('siteCtrl', function($scope, $http,$timeout) {
         		}));
 
 		var toggle = panorama.getVisible();
-        if ($scope.isstreet == false) {
+        if (toggle == false) {
           panorama.setVisible(true);
           $scope.isstreet = true;
           document.getElementById("pegman").src="http://cs-server.usc.edu:45678/hw/hw8/images/Map.png";
